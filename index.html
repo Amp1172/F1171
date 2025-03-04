@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบยืมคืนหนังสือ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ระบบยืมคืนหนังสือ</h1>
+
+        <h2>เพิ่มหนังสือใหม่</h2>
+        <form id="addBookForm">
+            <input type="text" id="title" placeholder="ชื่อหนังสือ" required>
+            <input type="text" id="author" placeholder="ผู้เขียน" required>
+            <button type="submit">เพิ่มหนังสือ</button>
+        </form>
+
+        <h2>ยืมหนังสือ</h2>
+        <form id="borrowBookForm">
+            <input type="number" id="borrowBookId" placeholder="รหัสหนังสือ" required>
+            <input type="text" id="borrower" placeholder="ชื่อผู้ยืม" required>
+            <button type="submit">ยืมหนังสือ</button>
+        </form>
+
+        <h2>คืนหนังสือ</h2>
+        <form id="returnBookForm">
+            <input type="number" id="returnBookId" placeholder="รหัสการยืม" required>
+            <button type="submit">คืนหนังสือ</button>
+        </form>
+
+        <h2>สถานะหนังสือ</h2>
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>รหัสหนังสือ</th>
+                    <th>ชื่อหนังสือ</th>
+                    <th>ผู้เขียน</th>
+                    <th>สถานะ</th>
+                    <th>ผู้ยืม</th>
+                </tr>
+            </thead>
+            <tbody>
+             
